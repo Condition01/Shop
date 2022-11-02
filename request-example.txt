@@ -1,0 +1,10 @@
+http://localhost:8080/customers?Id=5cea6ae6-9ccc-4b4c-8dfd-c1a6dc31b674
+
+curl -X 'POST' \
+  'http://localhost:8080/customers' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "string",
+  "email": "string"
+}'
