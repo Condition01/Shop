@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  shop_api:
+    image: "shop:v1"
+    container_name: "shop_api"
+    networks:
+      - shop_net
+    ports:
+      - 8080:8080
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+
+networks:
+  shop_net:
